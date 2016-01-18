@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity implements View.OnClickListener {
     String[] items = {
-            "Snackbar"
+            "Design Support Library demo", "ReclelyView Demo"
     };
 
     @Override
@@ -24,9 +24,14 @@ public class MainActivity extends ListActivity implements View.OnClickListener {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
+        Intent intent = new Intent();
         switch (position) {
             case 0:
-                Intent intent = new Intent(MainActivity.this, MaterialDesignActivity.class);
+                intent.setClass(MainActivity.this, MaterialDesignActivity.class);
+                startActivity(intent);
+                break;
+            case 1:
+                intent.setClass(MainActivity.this, MaterialDesignActivity.class);
                 startActivity(intent);
                 break;
         }

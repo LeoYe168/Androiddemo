@@ -13,15 +13,43 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.leoye.androiddemo.MainActivity">
 
+
     <TextView
         android:id="@+id/text_snackbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="snackbar demo" />
+        android:text="snackbar Example(click me)" />
+
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         app:fabSize="normal" />
 
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入用户名"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:inputType="textEmailAddress" />
+
+    </android.support.design.widget.TextInputLayout>
 </LinearLayout>

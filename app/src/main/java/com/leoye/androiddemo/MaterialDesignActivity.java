@@ -29,9 +29,11 @@ public class MaterialDesignActivity extends FragmentActivity implements View.OnC
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.text_snackbar:
-                Snackbar.make(v, "your message", Snackbar.LENGTH_INDEFINITE).setAction("click button", this).show();
+                Snackbar.make(v, "hi,i am snackbar", Snackbar.LENGTH_INDEFINITE).setAction("click button", this).show();
                 break;
+
             default:
+
                 break;
         }
     }
