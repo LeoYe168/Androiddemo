@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ListActivity implements View.OnClickListener {
     String[] items = {
-            "Design Support Library demo", "ReclelyView Demo"
+            "Design Support Library demo", "ReclelyView Demo","About listview"
     };
 
     @Override
@@ -36,6 +36,7 @@ public class MainActivity extends ListActivity implements View.OnClickListener {
                 break;
         }
     }
+
 
     @Override
     public void onClick(View v) {
