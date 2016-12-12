@@ -6,7 +6,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
-
+        //Freeline is a fast build and deployment tool for Android.
+        classpath 'com.antfortune.freeline:gradle:0.8.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

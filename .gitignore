@@ -60,4 +60,6 @@ proguard/
 # Log Files
 *.log
 
-
+# free line
+freeline/
+freeline*
