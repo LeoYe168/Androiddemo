@@ -1,10 +1,12 @@
-package com.leoye.androiddemo;
+package com.leoye.androiddemo.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.leoye.androiddemo.R;
 
 public class MaterialDesignActivity extends FragmentActivity implements View.OnClickListener {
 
