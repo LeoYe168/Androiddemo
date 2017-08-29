@@ -9,7 +9,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.leoye.androiddemo.R;
-import com.leoye.androiddemo.util.Util;
+import com.leoye.androiddemo.util.ShareUtil;
 
 public class MainActivity extends ListActivity implements View.OnClickListener {
     String[] items = {
@@ -40,7 +40,7 @@ public class MainActivity extends ListActivity implements View.OnClickListener {
                 break;
 
             case 2:
-                Util.shareDialog(MainActivity.this, "share title", null, "share text", "share objeck", "share link", "share imageUrl");
+                ShareUtil.shareDialog(MainActivity.this, "share title", null, "share text", "share objeck", "share link", "share imageUrl");
                 Toast.makeText(MainActivity.this, "share intent demo", Toast.LENGTH_SHORT).show();
                 break;
         }

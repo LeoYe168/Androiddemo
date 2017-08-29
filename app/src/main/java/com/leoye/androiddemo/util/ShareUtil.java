@@ -25,7 +25,7 @@ import java.util.List;
  * Created by Leoye168 on 2017/4/11 下午2:17
  */
 
-public class Util {
+public class ShareUtil {
     /**
      * @param context
      * @param title
@@ -76,7 +76,7 @@ public class Util {
                     }
                 } else {
                     //选择other 跳转系统分享列表页面
-                    Util.openShareDialog(arrayList.get(1), context, title, uri, shareText, shareSubject);
+                    ShareUtil.openShareDialog(arrayList.get(1), context, title, uri, shareText, shareSubject);
                 }
                 sheetDialog.dismiss();
             }
