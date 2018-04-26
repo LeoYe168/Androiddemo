@@ -1,15 +1,14 @@
 package com.example;
 
-import com.example.inter.SubscriptionSubject;
-import com.example.inter.WeiXinUser;
+import com.example.design.observer.SubscriptionSubject;
+import com.example.design.observer.WeiXinUser;
 
 /**
- * Observer pattern demo
+ * Created by yeyao on 2018/4/26 下午2:35
  */
-
-public class DesignPatterns {
-
+public class Test {
     public static void main(String[] args) {
+//        观察者设计模式demo
         SubscriptionSubject mSubscriptionSubject = new SubscriptionSubject();
         //创建微信用户
         WeiXinUser user1 = new WeiXinUser("one");
@@ -22,6 +21,4 @@ public class DesignPatterns {
         //公众号更新发出消息给订阅的微信用户
         mSubscriptionSubject.notify("hello world");
     }
-
-
 }
