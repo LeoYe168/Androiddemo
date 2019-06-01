@@ -1,23 +1,28 @@
 package com.example
 
+import com.example.design.observer.SubscriptionSubject
+import com.example.design.observer.WeiXinUser
+import com.example.other.idea.Car
+import java.lang.ref.WeakReference
+
 /**
  * Created by yeyao on 2018/4/26 下午2:35
  */
 object Test {
     @JvmStatic
     fun main(args: Array<String>) {
-        //        观察者设计模式demo
-        //        SubscriptionSubject mSubscriptionSubject = new SubscriptionSubject();
-        //        //创建微信用户
-        //        WeiXinUser user1 = new WeiXinUser("one");
-        //        WeiXinUser user2 = new WeiXinUser("two");
-        //        WeiXinUser user3 = new WeiXinUser("three");
-        //        //订阅公众号
-        //        mSubscriptionSubject.attach(user1);
-        //        mSubscriptionSubject.attach(user2);
-        //        mSubscriptionSubject.attach(user3);
-        //        //公众号更新发出消息给订阅的微信用户
-        //        mSubscriptionSubject.notify("hello world");
+        //观察者设计模式demo
+        val mSubscriptionSubject = SubscriptionSubject()
+        //创建微信用户
+        val user1 = WeiXinUser("one")
+        val user2 = WeiXinUser("two")
+        val user3 = WeiXinUser("three")
+        //订阅公众号
+        mSubscriptionSubject.attach(user1)
+        mSubscriptionSubject.attach(user2)
+        mSubscriptionSubject.attach(user3)
+        //公众号更新发出消息给订阅的微信用户
+        mSubscriptionSubject.notify("hello world")
 
         //        循环队列数组demo
         //        QueueArray<Integer> se = new QueueArray<>();
@@ -83,34 +88,7 @@ object Test {
 //                break
 //            }
 //        }
-        val list = listOf(2, 4, 0)
-        // 不标明参数名
-        println(joinToString2(list, " - ", "[", "]"))
-        // 显式的标明参数名称
-        println(joinToString2(list, separator = " - ", prefix = "[", postfix = "]"))
 
-        println(joinToString2(list, "-", ""))
-
-        val str = "testchina"
-        println(str.lastStr())
 
     }
-
-    /*
-* 打印列表的内容
-* */
-    fun <T> joinToString2(collection: Collection<T>,
-                          separator: String = ", ",
-                          prefix: String = "",
-                          postfix: String = ""): String {
-        val result = StringBuilder(prefix)
-        for ((index, element) in collection.withIndex()) {
-            if (index > 0) result.append(separator)
-            result.append(element)
-        }
-        result.append(postfix)
-        return result.toString()
-    }
-
-    fun String.lastStr(): Char = this.get(this.length - 1)
 }
