@@ -2,8 +2,6 @@ package com.example
 
 import com.example.design.observer.SubscriptionSubject
 import com.example.design.observer.WeiXinUser
-import com.example.other.idea.Car
-import java.lang.ref.WeakReference
 
 /**
  * Created by yeyao on 2018/4/26 下午2:35
